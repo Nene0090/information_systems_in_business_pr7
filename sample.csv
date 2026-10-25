@@ -1,0 +1,10 @@
+id;ops;expected
+o1;+P1x1|+P2x2;OK|2|28000.00|DRAFT
+o2;+P2x2|+P2x3;OK|1|7500.00|DRAFT
+o3;+P1x1|+P2x1|-P2|confirm;OK|1|25000.00|CONFIRMED
+o4;+P1x1|+P3x1|confirm;ERROR|IllegalStateException
+o5;+P1x0;ERROR|IllegalArgumentException
+o6;+P2x100|+P2x1;ERROR|IllegalArgumentException
+o7;+P1x1|confirm|+P2x1;ERROR|IllegalStateException
+o8;+P9x1;ERROR|IllegalArgumentException
+o9;+P2x20|confirm;OK|1|30000.00|CONFIRMED
